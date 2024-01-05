@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="257dp"
+            android:layout_height="150dp"
+            android:src="@drawable/suma"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:layout_marginBottom="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suma de dos numeros"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+
+
+        <EditText
+            android:id="@+id/Num1"
+            android:layout_marginBottom="5dp"
+            android:layout_width="267dp"
+            android:layout_height="wrap_content"
+            android:hint="Numero 1"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+
+
+        <EditText
+            android:id="@+id/Num2"
+            android:layout_marginBottom="5dp"
+            android:layout_width="264dp"
+            android:layout_height="wrap_content"
+            android:hint="Numero 2"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+<Button
+    android:id="@+id/btnSumar"
+    android:layout_marginTop="15dp"
+    android:backgroundTint="@color/background_button"
+    android:text="Sumar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtResultado"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resultado: 0"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
